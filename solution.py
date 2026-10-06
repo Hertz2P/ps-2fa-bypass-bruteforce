@@ -98,6 +98,6 @@ async def brute(site, session, username, password, mfacode):
         print(f'2fa invalid with response code: {status}') 
         await session.close()
 
-await main()        
+asyncio.run(main())        
 # loop = asyncio.get_event_loop()
 # loop.run_until_complete(main())
